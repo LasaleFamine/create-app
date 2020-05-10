@@ -22,3 +22,4 @@ There are few templates availables:
 - Add next-sanity template
 - Add tests
 - Add autodeploy
+- Add @lasalefamine/postcss-config
