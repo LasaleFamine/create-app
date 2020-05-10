@@ -1,4 +1,4 @@
-[![Test&Deploy](https://github.com/LasaleFamine/create-app/workflows/Test&Deploy/badge.svg)](https://github.com/LasaleFamine/create-app/actions)
+[![CI](https://github.com/LasaleFamine/create-app/workflows/CI/badge.svg)](https://github.com/LasaleFamine/create-app/actions)
 
 # @lasalefamine/create-app
 
