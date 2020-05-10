@@ -1,0 +1,105 @@
+{
+  "name": "@lasalefamine/create-app",
+  "version": "0.0.0",
+  "description": "Opinionated app generator",
+  "keywords": [
+    "generator",
+    "web",
+    "app",
+    "next.js",
+    "react",
+    "typescript",
+    "boilerplate",
+    "starter"
+  ],
+  "license": "MIT",
+  "repository": "LasaleFamine/create-app",
+  "author": {
+    "name": "Alessio Occhipinti",
+    "email": "info@godev.space",
+    "url": "https://godev.space"
+  },
+  "scripts": {
+    "dev": "ts-node src/cli.ts",
+    "build": "rimraf dist && tsc",
+    "prepack": "yarn build",
+    "test": "tsc --noEmit --sourceMap && eslint src/*.ts"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": "eslint"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "chalk": "4.0.0",
+    "cpy": "8.1.0",
+    "empty-dir": "2.0.0",
+    "make-dir": "3.1.0",
+    "meow": "7.0.0",
+    "ora": "4.0.4",
+    "pkg-install": "1.0.0",
+    "prompts": "2.3.2",
+    "read-pkg-up": "7.0.1",
+    "rimraf": "3.0.2",
+    "update-notifier": "4.1.0",
+    "validate-npm-package-name": "3.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "8.3.5",
+    "@commitlint/config-conventional": "8.3.4",
+    "@lasalefamine/eslint-config": "0.1.0",
+    "@lasalefamine/eslint-config-base": "0.1.0",
+    "@lasalefamine/tsconfig": "0.1.0",
+    "@types/chalk": "2.2.0",
+    "@types/empty-dir": "2.0.0",
+    "@types/node": "13.13.5",
+    "@types/prompts": "2.0.8",
+    "@types/rimraf": "3.0.0",
+    "@types/update-notifier": "4.1.0",
+    "@types/validate-npm-package-name": "3.0.0",
+    "@typescript-eslint/eslint-plugin": "2.31.0",
+    "@typescript-eslint/parser": "2.31.0",
+    "ava": "3.8.2",
+    "eslint": "7.0.0",
+    "eslint-plugin-import": "2.20.2",
+    "lint-staged": "10.2.2",
+    "nyc": "15.0.1",
+    "ts-node": "8.10.1",
+    "typescript": "3.8.3"
+  },
+  "files": [
+    "dist",
+    "templates",
+    "!*.test.*"
+  ],
+  "main": "dist",
+  "bin": {
+    "lf-create-app": "./dist/cli.js"
+  },
+  "nyc": {
+    "all": true,
+    "extension": [
+      ".ts"
+    ],
+    "include": [
+      "dist",
+      "src"
+    ],
+    "exclude": [
+      "**/*.d.ts",
+      "**/*.test.ts"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  }
+}

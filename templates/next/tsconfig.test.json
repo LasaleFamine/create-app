@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "jest-helpers/*": [".jest/*"],
+      "components/*": ["src/components/*"],
+      "core/*": ["src/core/*"],
+    }
+  }
+}

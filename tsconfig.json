@@ -1,0 +1,13 @@
+{
+  "extends": "@lasalefamine/tsconfig",
+  "include": [
+    "src",
+    "test",
+    "types",
+  ],
+  "exclude": ["templates"],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "outDir": "dist"
+  }
+}

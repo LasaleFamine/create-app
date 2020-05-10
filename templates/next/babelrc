@@ -1,0 +1,21 @@
+{
+  "presets": [["next/babel"]],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./"],
+      "alias": {
+        "components": "./src/components",
+        "core": "./src/core"
+      }
+    }]
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        ["babel-plugin-jsx-remove-data-test-id", {
+          "attributes": ["data-cy"]
+        }]
+      ]
+    }
+  }
+}
