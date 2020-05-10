@@ -10,10 +10,10 @@ const cli = meow(`
     $ lf-create-app <input>
 
   Options
-    --template, -t  Specify template [options: next|next-i18n]
+    --template, -t  Specify template [options: next]
 
   Examples
-    $ lf-create-app my-app --template next-i18n
+    $ lf-create-app my-app --template next
 `, {
   flags: {
     template: {

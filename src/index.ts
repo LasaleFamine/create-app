@@ -9,10 +9,12 @@ import { log } from './helpers/log';
 const templatesAvailable = [{
   title: 'Next.js app with Typescript + PostCSS + CSSModules',
   value: 'next',
-}, {
-  title: 'Next.js app default + next-i18n',
-  value: 'next-i18n',
-}];
+},
+// {
+//   title: 'Next.js app default + next-i18n',
+//   value: 'next-i18n',
+// }
+];
 
 type Flags = {
   template: string;
