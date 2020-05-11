@@ -26,3 +26,16 @@ jobs:
         run: |
           yarn --frozen-lockfile
           yarn test
+  publish:
+    runs-on: ubuntu-latest
+    if: contains(github.ref, 'tag')
+    needs: test
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 10
+      - name: Publish to NPM
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
