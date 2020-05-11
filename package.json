@@ -23,7 +23,8 @@
     "dev": "ts-node src/cli.ts",
     "build": "rimraf dist && tsc",
     "prepack": "yarn build",
-    "test": "tsc --noEmit --sourceMap && eslint src/*.ts"
+    "test": "tsc --noEmit --sourceMap && eslint src/*.ts",
+    "release": "git pull && standard-version && git push --follow-tags"
   },
   "husky": {
     "hooks": {
@@ -73,6 +74,7 @@
     "husky": "4.2.5",
     "lint-staged": "10.2.2",
     "nyc": "15.0.1",
+    "standard-version": "8.0.0",
     "ts-node": "8.10.1",
     "typescript": "3.8.3"
   },
