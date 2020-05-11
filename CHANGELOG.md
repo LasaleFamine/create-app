@@ -1,0 +1,10 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### 0.0.1 (2020-05-11)
+
+
+### Bug Fixes
+
+* pathChoose wrong check ([6854854](https://github.com/LasaleFamine/create-app/commit/685485481c17abe52304d5661ad418d2ac391a71))
