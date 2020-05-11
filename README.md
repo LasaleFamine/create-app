@@ -21,5 +21,4 @@ There are few templates available:
 - Add next-i18n template
 - Add next-sanity template
 - Add tests
-- Add autodeploy
 - Add @lasalefamine/postcss-config
