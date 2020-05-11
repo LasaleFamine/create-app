@@ -39,7 +39,7 @@ export const run = async (projectPath: string, flags: Flags) => {
       },
     });
 
-    if (typeof path === 'string') {
+    if (typeof pathChoosen === 'string') {
       finalProjectPath = pathChoosen.trim();
     }
   }
