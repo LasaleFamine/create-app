@@ -1,6 +1,6 @@
 {
   "name": "@lasalefamine/create-app",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Opinionated app generator",
   "keywords": [
     "generator",
