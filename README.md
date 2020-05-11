@@ -12,7 +12,7 @@ $ npx @lasalefamine/create-app my-app
 
 ## Templates
 
-There are few templates availables:
+There are few templates available:
 
 - next
 
