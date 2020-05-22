@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/LasaleFamine/create-app/compare/v0.1.1...v0.1.2) (2020-05-22)
+
+
+### Bug Fixes
+
+* import components with new path ([d0f4ef4](https://github.com/LasaleFamine/create-app/commit/d0f4ef49b81a326857703b17718bde60b2628926))
+
 ### [0.1.1](https://github.com/LasaleFamine/create-app/compare/v0.1.0...v0.1.1) (2020-05-22)
 
 
