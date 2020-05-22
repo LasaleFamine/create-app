@@ -11,7 +11,11 @@ const filesWithDots = (name: string) => {
     case 'yarnrc':
     case 'npmrc':
     case 'editorconfig':
-    case 'babelrc': {
+    case 'babelrc':
+    case 'env.development':
+    case 'env.production':
+    case 'env':
+    case 'env.local': {
       return '.'.concat(name);
     }
     default: {
