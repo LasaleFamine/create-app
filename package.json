@@ -37,7 +37,7 @@
     "*.{ts,tsx,js,jsx}": "eslint"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=10 || < 13 || >= 14"
   },
   "dependencies": {
     "chalk": "4.1.0",
