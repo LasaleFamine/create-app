@@ -7,4 +7,7 @@
     "@lasalefamine/eslint-config/a11y",
     "plugin:cypress/recommended"
   ],
+  "parserOptions": {
+    "project": "./tsconfig.eslint.json"
+  }
 }
