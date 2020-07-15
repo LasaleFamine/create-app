@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/LasaleFamine/create-app/compare/v0.1.5...v0.1.6) (2020-07-15)
+
+
+### Bug Fixes
+
+* next template eslint and app ([29edad5](https://github.com/LasaleFamine/create-app/commit/29edad51e2d57078f7408493ff91b232c38e6a3c))
+
 ### [0.1.5](https://github.com/LasaleFamine/create-app/compare/v0.1.4...v0.1.5) (2020-06-20)
 
 ### [0.1.4](https://github.com/LasaleFamine/create-app/compare/v0.1.3...v0.1.4) (2020-06-20)
