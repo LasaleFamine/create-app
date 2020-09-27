@@ -50,13 +50,15 @@ export const getCommonApp = (appName: string) => ({
       'typescript',
 
       // TODO: Remove when @lasalefamine/postcss-config is ready
-      'postcss-mixins',
+      'postcss-mixins@6',
       'postcss-easy-import',
       'postcss-normalize',
       'postcss-preset-env',
       'postcss-responsive-type',
       'postcss-inset',
+      'postcss-reporter@6',
       'cssnano-preset-advanced',
+      'cssnano',
     ],
   },
   package: {
