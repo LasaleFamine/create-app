@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.7](https://github.com/LasaleFamine/create-app/compare/v0.1.6...v0.1.7) (2020-09-27)
+
+
+### Bug Fixes
+
+* correct deps for new next version ([b2137b6](https://github.com/LasaleFamine/create-app/commit/b2137b6e3a567fe59ee62484908d215c777ff191))
+* upgrade cpy from 8.1.0 to 8.1.1 ([f535df0](https://github.com/LasaleFamine/create-app/commit/f535df01a99c5d754aac3b8e50617ffebbd0e338))
+* upgrade ora from 4.0.4 to 4.0.5 ([23a4407](https://github.com/LasaleFamine/create-app/commit/23a44078344fa9b89ddb4e851a5087455f7eb6aa))
+* upgrade ora from 4.0.5 to 4.1.1 ([2a67a87](https://github.com/LasaleFamine/create-app/commit/2a67a87304b062e0a69c99d8496e3c9b3a659485))
+* upgrade update-notifier from 4.1.0 to 4.1.1 ([851a250](https://github.com/LasaleFamine/create-app/commit/851a25027cf859f4f9ade28b7b7b814308163505))
+
 ### [0.1.6](https://github.com/LasaleFamine/create-app/compare/v0.1.5...v0.1.6) (2020-07-15)
 
 
