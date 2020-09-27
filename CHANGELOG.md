@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.8](https://github.com/LasaleFamine/create-app/compare/v0.1.7...v0.1.8) (2020-09-27)
+
+
+### Bug Fixes
+
+* missing native elements dep ([e7d2fd0](https://github.com/LasaleFamine/create-app/commit/e7d2fd00e152025478f8e773d3ce3233cb23232b))
+
 ### [0.1.7](https://github.com/LasaleFamine/create-app/compare/v0.1.6...v0.1.7) (2020-09-27)
 
 
