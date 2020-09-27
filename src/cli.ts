@@ -18,7 +18,7 @@ const cli = meow(`
   flags: {
     template: {
       type: 'string',
-      alias: 't',
+      alias: 't' as const,
     },
   },
 });
@@ -35,7 +35,8 @@ process.on('SIGTERM', () => {
 
 log.start();
 
-run(cli.input[0], cli.flags)
+// TODO remove the as { template: string } when type problem is solved
+run(cli.input[0], cli.flags as { template: string })
   .then(notifyUpdate)
   .catch(async (error) => {
     const newError = new Error(error);
