@@ -48,7 +48,7 @@
     "ora": "5.1.0",
     "pkg-install": "1.0.0",
     "prompts": "2.3.2",
-    "read-pkg-up": "7.0.1",
+    "read-pkg-up": "8.0.0",
     "rimraf": "3.0.2",
     "update-notifier": "4.1.1",
     "validate-npm-package-name": "3.0.0"
