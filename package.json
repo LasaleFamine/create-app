@@ -47,7 +47,7 @@
     "meow": "8.0.0",
     "ora": "5.1.0",
     "pkg-install": "1.0.0",
-    "prompts": "2.3.2",
+    "prompts": "2.4.0",
     "read-pkg-up": "7.0.1",
     "rimraf": "3.0.2",
     "update-notifier": "4.1.3",
