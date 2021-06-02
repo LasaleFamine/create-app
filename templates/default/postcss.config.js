@@ -30,10 +30,5 @@ module.exports = {
         },
       ],
     },
-    /* More info at https://github.com/postcss/postcss-reporter */
-    'postcss-reporter': {
-      clearReportedMessages: true,
-      throwError: true,
-    },
   },
 };

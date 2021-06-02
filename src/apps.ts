@@ -57,7 +57,7 @@ export const getCommonApp = (appName: string) => ({
       'postcss-preset-env',
       'postcss-responsive-type',
       'postcss-inset',
-      'postcss-reporter@6',
+      'postcss',
       'cssnano-preset-advanced',
       'cssnano',
     ],
