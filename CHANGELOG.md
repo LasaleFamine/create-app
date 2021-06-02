@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/LasaleFamine/create-app/compare/v1.0.1...v1.0.2) (2021-06-02)
+
+
+### Bug Fixes
+
+* postcss cleanup ([adf8a4e](https://github.com/LasaleFamine/create-app/commit/adf8a4eba42dfcfcbc381e9d010c8c3eba1191a7))
+
 ### [1.0.1](https://github.com/LasaleFamine/create-app/compare/v1.0.0...v1.0.1) (2021-06-02)
 
 ## [1.0.0](https://github.com/LasaleFamine/create-app/compare/v0.1.9...v1.0.0) (2021-06-02)
