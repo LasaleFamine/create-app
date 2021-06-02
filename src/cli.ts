@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 import meow from 'meow';
 import updateNotifier from 'update-notifier';
-import readPkg from 'read-pkg-up';
-import { run } from './index';
-import { log } from './helpers/log';
+import { readPackageUpAsync } from 'read-pkg-up';
+import { run } from './index.js';
+import { log } from './helpers/log.js';
 
 const cli = meow(`
   Usage
@@ -15,16 +15,17 @@ const cli = meow(`
   Examples
     $ lf-create-app my-app --template next
 `, {
+  importMeta: import.meta,
   flags: {
     template: {
       type: 'string',
-      alias: 't' as const,
+      alias: 't',
     },
   },
 });
 
 const notifyUpdate = async () => {
-  const pkg = await readPkg();
+  const pkg = await readPackageUpAsync();
   updateNotifier({ pkg: pkg?.packageJson }).notify();
 };
 
