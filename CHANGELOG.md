@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.9](https://github.com/LasaleFamine/create-app/compare/v0.1.8...v0.1.9) (2021-06-02)
+
+
+### Features
+
+* using type module ([feb134a](https://github.com/LasaleFamine/create-app/commit/feb134afe2834f57b97ca0ffced8dbfdc3471c91))
+
+
+### Bug Fixes
+
+* package.json & yarn.lock to reduce vulnerabilities ([922e787](https://github.com/LasaleFamine/create-app/commit/922e78795bc409372dab54802949d8b2a95002e7))
+* upgrade chalk from 4.1.0 to 4.1.1 ([8381353](https://github.com/LasaleFamine/create-app/commit/8381353611a2b729992136a4ad9fbd2b52b5288f))
+* upgrade cpy from 8.1.1 to 8.1.2 ([2e11cec](https://github.com/LasaleFamine/create-app/commit/2e11cec215a38dfe8a6e7e73a2f5a49462322dbd))
+* upgrade prompts from 2.3.2 to 2.4.0 ([6c0e0e7](https://github.com/LasaleFamine/create-app/commit/6c0e0e77d617dff74f485b0a3b6a020ce5765f63))
+* upgrade prompts from 2.4.0 to 2.4.1 ([6603d19](https://github.com/LasaleFamine/create-app/commit/6603d19d880c4df104d0add2f0ddcdd463d22ecc))
+* upgrade update-notifier from 4.1.1 to 4.1.3 ([a805637](https://github.com/LasaleFamine/create-app/commit/a80563797af96a570a749a5f91689bce5088be4b))
+
 ### [0.1.8](https://github.com/LasaleFamine/create-app/compare/v0.1.7...v0.1.8) (2020-09-27)
 
 
