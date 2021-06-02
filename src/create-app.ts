@@ -5,11 +5,11 @@ import makeDir from 'make-dir';
 import emptyDir from 'empty-dir';
 import chalk from 'chalk';
 import os from 'os';
-import { Templates } from './types';
-import { getCommonApp, getNextApp, templatesDepencencies } from './apps';
-import { copyAll } from './helpers/copy';
-import { log } from './helpers/log';
-import { tryGitInit } from './helpers/git';
+import { Templates } from './types.js';
+import { getCommonApp, getNextApp, templatesDepencencies } from './apps.js';
+import { copyAll } from './helpers/copy.js';
+import { log } from './helpers/log.js';
+import { tryGitInit } from './helpers/git.js';
 
 type Props = {
   appPath: string;

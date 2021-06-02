@@ -1,10 +1,10 @@
 import path from 'path';
 import chalk from 'chalk';
 import prompts from 'prompts';
-import { validateAppName } from './helpers/validate-name';
-import { createApp } from './create-app';
-import { Templates } from './types';
-import { log } from './helpers/log';
+import { validateAppName } from './helpers/validate-name.js';
+import { createApp } from './create-app.js';
+import { Templates } from './types.js';
+import { log } from './helpers/log.js';
 
 const templatesAvailable = [{
   title: 'Next.js app with Typescript + PostCSS + CSSModules',

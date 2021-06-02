@@ -7,6 +7,7 @@
   ],
   "exclude": ["templates"],
   "compilerOptions": {
+    "module": "ES2020",
     "esModuleInterop": true,
     "outDir": "dist"
   }
