@@ -34,6 +34,7 @@ export const getCommonApp = (appName: string) => ({
       'cypress',
       'eslint',
       '@lasalefamine/eslint-config',
+      'eslint-config-next',
       'eslint-plugin-cypress',
       'eslint-plugin-import',
       'eslint-plugin-jsx-a11y',
@@ -58,7 +59,7 @@ export const getCommonApp = (appName: string) => ({
       'postcss-responsive-type',
       'postcss-inset',
       'postcss',
-      'cssnano-preset-advanced',
+      'cssnano-preset-advanced@4',
       'cssnano',
     ],
   },
@@ -66,13 +67,6 @@ export const getCommonApp = (appName: string) => ({
     name: appName,
     version: '0.0.0',
     private: true,
-    husky: {
-      hooks: {
-        'pre-commit': 'lint-staged',
-        'pre-push': 'yarn ts:check && yarn test',
-        'commit-msg': 'commitlint -E HUSKY_GIT_PARAMS',
-      },
-    },
     'lint-staged': {
       '*.{ts,tsx,js,jsx}': 'eslint',
       '*.css': 'stylelint',
@@ -101,9 +95,10 @@ export const getCommonApp = (appName: string) => ({
       ],
       globals: {
         'ts-jest': {
-          tsConfig: 'tsconfig.test.json',
+          tsconfig: 'tsconfig.test.json',
         },
       },
+      testEnvironment: 'jsdom',
     },
     browserslist: [
       'last 1 Chrome versions',
@@ -130,6 +125,7 @@ export const getNextApp = () => ({
       start: 'next start',
       test: 'jest',
       'ts:check': 'tsc --noEmit',
+      postinstall: 'husky install',
     },
   },
 });

@@ -5,7 +5,8 @@
     "@lasalefamine/eslint-config",
     "@lasalefamine/eslint-config/hooks",
     "@lasalefamine/eslint-config/a11y",
-    "plugin:cypress/recommended"
+    "plugin:cypress/recommended",
+    "plugin:@next/next/recommended"
   ],
   "parserOptions": {
     "project": "./tsconfig.eslint.json"

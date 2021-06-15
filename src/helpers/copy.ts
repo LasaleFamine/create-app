@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import fs from 'fs';
 import path from 'path';
 import cpy from 'cpy';
@@ -29,7 +30,7 @@ const filesWithDots = (name: string) => {
 };
 
 const renameFoldersWithDots = (root: string) => {
-  const folders = ['vscode', 'jest'];
+  const folders = ['vscode', 'jest', 'husky'];
   folders.forEach(folder => fs.renameSync(path.join(root, folder), path.join(root, `.${folder}`)));
 };
 
