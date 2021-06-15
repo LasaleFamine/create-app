@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/LasaleFamine/create-app/compare/v1.0.2...v1.1.0) (2021-06-15)
+
+
+### Features
+
+* added correctly husky and new next configs ([404a5d5](https://github.com/LasaleFamine/create-app/commit/404a5d5bdd648d10073da19852d9c59cb92f0685))
+
 ### [1.0.2](https://github.com/LasaleFamine/create-app/compare/v1.0.1...v1.0.2) (2021-06-02)
 
 
