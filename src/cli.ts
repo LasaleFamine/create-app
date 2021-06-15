@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 import meow from 'meow';
 import updateNotifier from 'update-notifier';
 import { readPackageUpAsync } from 'read-pkg-up';
