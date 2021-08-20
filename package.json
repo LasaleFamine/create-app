@@ -41,7 +41,7 @@
   },
   "type": "module",
   "dependencies": {
-    "chalk": "4.1.1",
+    "chalk": "4.1.2",
     "cpy": "8.1.2",
     "empty-dir": "2.0.0",
     "make-dir": "3.1.0",
