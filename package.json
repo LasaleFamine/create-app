@@ -46,7 +46,7 @@
     "empty-dir": "2.0.0",
     "make-dir": "3.1.0",
     "meow": "10.0.1",
-    "ora": "5.4.1",
+    "ora": "6.0.0",
     "pkg-install": "1.0.0",
     "prompts": "2.4.1",
     "read-pkg-up": "8.0.0",
