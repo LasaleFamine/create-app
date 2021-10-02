@@ -24,14 +24,8 @@
     "build": "rimraf dist && tsc",
     "prepack": "yarn build",
     "test": "tsc --noEmit --sourceMap && eslint src/*.ts",
-    "release": "git pull && standard-version && git push --follow-tags"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "yarn test",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+    "release": "git pull && standard-version && git push --follow-tags",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": "eslint"
@@ -72,7 +66,7 @@
     "ava": "3.15.0",
     "eslint": "7.32.0",
     "eslint-plugin-import": "2.24.2",
-    "husky": "4.3.0",
+    "husky": "7.0.0",
     "lint-staged": "11.1.2",
     "nyc": "15.1.0",
     "standard-version": "9.3.1",
