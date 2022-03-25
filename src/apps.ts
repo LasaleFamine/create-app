@@ -16,7 +16,6 @@ export const getCommonApp = (appName: string) => ({
       'react',
       'react-dom',
       'what-input',
-      '@native-elements/core',
     ],
     dev: [
       '@commitlint/config-conventional',

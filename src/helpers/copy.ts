@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/naming-convention */
+import cpy from 'cpy';
 import fs from 'fs';
 import path from 'path';
-import cpy from 'cpy';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -43,13 +43,12 @@ type Props = {
 export const copyAll = async ({ appRoot, baseTemplate }: Props) => {
   const templatesPath = path.join(__dirname, '..', '..', 'templates');
   await cpy('**/*', appRoot, {
-    parents: true,
     cwd: path.join(templatesPath, 'default'),
     rename: filesWithDots,
+
   });
 
   await cpy('**/*', appRoot, {
-    parents: true,
     cwd: path.join(templatesPath, baseTemplate),
     rename: filesWithDots,
   });

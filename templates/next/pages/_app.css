@@ -25,11 +25,11 @@ body {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 4px;
-  background: hsl(env(--secondary-70));
+  background: rebeccapurple;
 }
 
 /* Handle Hover */
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(env(--primary-100));
+  background: rebeccapurple;
 }

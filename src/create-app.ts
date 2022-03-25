@@ -1,15 +1,16 @@
-import path from 'path';
-import { writeFileSync } from 'fs';
-import { install } from 'pkg-install';
-import makeDir from 'make-dir';
-import emptyDir from 'empty-dir';
 import chalk from 'chalk';
+import emptyDir from 'empty-dir';
+import { writeFileSync } from 'fs';
+import makeDir from 'make-dir';
 import os from 'os';
-import { Templates } from './types.js';
+import path from 'path';
+import { install } from 'pkg-install';
+
 import { getCommonApp, getNextApp, templatesDepencencies } from './apps.js';
 import { copyAll } from './helpers/copy.js';
-import { log } from './helpers/log.js';
 import { tryGitInit } from './helpers/git.js';
+import { log } from './helpers/log.js';
+import { Templates } from './types.js';
 
 type Props = {
   appPath: string;

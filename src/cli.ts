@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 
 import meow from 'meow';
+import { readPackageUp } from 'read-pkg-up';
 import updateNotifier from 'update-notifier';
-import { readPackageUpAsync } from 'read-pkg-up';
-import { run } from './index.js';
+
 import { log } from './helpers/log.js';
+import { run } from './index.js';
 
 const cli = meow(`
   Usage
@@ -26,7 +27,7 @@ const cli = meow(`
 });
 
 const notifyUpdate = async () => {
-  const pkg = await readPackageUpAsync();
+  const pkg = await readPackageUp();
   updateNotifier({ pkg: pkg?.packageJson }).notify();
 };
 

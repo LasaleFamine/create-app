@@ -1,5 +1,4 @@
 import React from 'react';
-import '@native-elements/core';
 import './_app.css';
 import 'what-input';
 
