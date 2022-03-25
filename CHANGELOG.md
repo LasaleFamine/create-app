@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/LasaleFamine/create-app/compare/v1.1.1...v1.1.2) (2022-03-25)
+
+
+### Bug Fixes
+
+* added sort eslint plugin ([ef65545](https://github.com/LasaleFamine/create-app/commit/ef65545880877474dac77a4fe2dc646e0134f889))
+* removed native elements and update deps ([d853aca](https://github.com/LasaleFamine/create-app/commit/d853aca30ae2627429be2126e0e83857ef53e97c))
+
 ### [1.1.1](https://github.com/LasaleFamine/create-app/compare/v1.1.0...v1.1.1) (2021-10-02)
 
 ## [1.1.0](https://github.com/LasaleFamine/create-app/compare/v1.0.2...v1.1.0) (2021-06-15)
