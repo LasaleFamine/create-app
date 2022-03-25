@@ -39,6 +39,7 @@ export const getCommonApp = (appName: string) => ({
       'eslint-plugin-jsx-a11y',
       'eslint-plugin-react',
       'eslint-plugin-react-hooks',
+      'eslint-plugin-simple-import-sort',
       'husky',
       'identity-obj-proxy',
       'jest',
