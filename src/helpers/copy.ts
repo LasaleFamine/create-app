@@ -12,6 +12,7 @@ const filesWithDots = (name: string) => {
     case 'gitkeep':
     case 'gitignore':
     case 'eslintrc':
+    case 'eslintignore':
     case 'stylelintrc':
     case 'yarnrc':
     case 'npmrc':
