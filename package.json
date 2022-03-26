@@ -1,6 +1,6 @@
 {
   "name": "@lasalefamine/create-app",
-  "version": "1.1.5",
+  "version": "1.1.4",
   "description": "Opinionated app generator",
   "keywords": [
     "generator",
@@ -36,7 +36,7 @@
   "type": "module",
   "dependencies": {
     "chalk": "5.0.1",
-    "cpy": "8",
+    "cpy": "9.0.0",
     "empty-dir": "2.0.0",
     "make-dir": "3.1.0",
     "meow": "10.1.2",
