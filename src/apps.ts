@@ -28,8 +28,6 @@ export const getCommonApp = (appName: string) => ({
       '@types/react',
       '@typescript-eslint/eslint-plugin',
       '@typescript-eslint/parser',
-      'babel-plugin-jsx-remove-data-test-id',
-      'babel-plugin-module-resolver',
       'cypress',
       'eslint',
       '@lasalefamine/eslint-config',
@@ -47,7 +45,8 @@ export const getCommonApp = (appName: string) => ({
       'lint-staged',
       'react-test-renderer',
       'stylelint',
-      'stylelint-config-oval',
+      'stylelint-config-equinusocio',
+      'stylelint-config-standard',
       'ts-jest',
       'typescript',
 
