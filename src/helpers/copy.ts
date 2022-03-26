@@ -42,13 +42,12 @@ type Props = {
 
 export const copyAll = async ({ appRoot, baseTemplate }: Props) => {
   const templatesPath = path.join(__dirname, '..', '..', 'templates');
-  await cpy('**/*', appRoot, {
+  await cpy('.', appRoot, {
     cwd: path.join(templatesPath, 'default'),
     rename: filesWithDots,
-
   });
 
-  await cpy('**/*', appRoot, {
+  await cpy('.', appRoot, {
     cwd: path.join(templatesPath, baseTemplate),
     rename: filesWithDots,
   });
