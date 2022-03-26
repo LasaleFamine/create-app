@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.5](https://github.com/LasaleFamine/create-app/compare/v1.1.4...v1.1.5) (2022-03-26)
+
+
+### Bug Fixes
+
+* back to cpy 8 for now ([e6226cc](https://github.com/LasaleFamine/create-app/commit/e6226cc3c2dfd2b0e70686343f6b97a3a8404ee5))
+
 ### [1.1.4](https://github.com/LasaleFamine/create-app/compare/v1.1.3...v1.1.4) (2022-03-26)
 
 
