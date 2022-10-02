@@ -10,11 +10,10 @@ import { getCommonApp, getNextApp, templatesDepencencies } from './apps.js';
 import { copyAll } from './helpers/copy.js';
 import { tryGitInit } from './helpers/git.js';
 import { log } from './helpers/log.js';
-import { Templates } from './types.js';
 
 type Props = {
   appPath: string;
-  template: Templates;
+  template: keyof typeof templatesDepencencies;
 }
 
 export const createApp = async ({ appPath, template }: Props) => {
@@ -23,8 +22,8 @@ export const createApp = async ({ appPath, template }: Props) => {
   const originalDirectory = process.cwd();
 
   await makeDir(root);
-  const rootIsEmpty = await emptyDir(root).catch(() => false);
-  if (!rootIsEmpty) {
+  const isRootEmpty = await emptyDir(root).catch(() => false);
+  if (!isRootEmpty) {
     log.fail(`The choosen folder is not empty: ${root}`);
     log.info('Try to remove the folder or try with another one.');
     process.exit(1);
@@ -37,7 +36,7 @@ export const createApp = async ({ appPath, template }: Props) => {
 
   const commonApp = getCommonApp(name);
   const mainTemplateApp = getNextApp();
-  const templateSpecific = templatesDepencencies[template] || { direct: [], dev: [], package: {} };
+  const templateSpecific = templatesDepencencies[template] ?? { direct: [], dev: [], package: {} };
 
   const packageJSON = {
     ...commonApp.package,

@@ -2,10 +2,10 @@ import chalk from 'chalk';
 import path from 'path';
 import prompts from 'prompts';
 
+import { templatesDepencencies } from './apps.js';
 import { createApp } from './create-app.js';
 import { log } from './helpers/log.js';
 import { validateAppName } from './helpers/validate-name.js';
-import { Templates } from './types.js';
 
 const templatesAvailable = [{
   title: 'Next.js app with Typescript + PostCSS + CSSModules',
@@ -29,7 +29,7 @@ export const run = async (projectPath: string, flags: Flags) => {
 
   if (!finalProjectPath) {
     log.stop();
-    const { path: pathChoosen } = await prompts({
+    const promptResult = await prompts({
       type: 'text',
       name: 'path',
       message: 'What is your project named?',
@@ -40,8 +40,8 @@ export const run = async (projectPath: string, flags: Flags) => {
       },
     });
 
-    if (typeof pathChoosen === 'string') {
-      finalProjectPath = pathChoosen.trim();
+    if (typeof promptResult?.path === 'string') {
+      finalProjectPath = promptResult.path.trim();
     }
   }
 
@@ -64,14 +64,16 @@ export const run = async (projectPath: string, flags: Flags) => {
 
   if (!finalTemplate) {
     log.stop();
-    const { template } = await prompts({
+    const promptResult = await prompts({
       type: 'select',
       name: 'template',
       message: 'Pick a template',
       choices: templatesAvailable,
     });
 
-    finalTemplate = template;
+    if (typeof promptResult?.template === 'string') {
+      finalTemplate = promptResult.template;
+    }
 
     if (!finalTemplate) {
       log.fail('You must specify a template');
@@ -91,6 +93,6 @@ export const run = async (projectPath: string, flags: Flags) => {
   // We have everything we need
   await createApp({
     appPath: path.resolve(finalProjectPath),
-    template: finalTemplate as Templates,
+    template: finalTemplate as keyof typeof templatesDepencencies,
   });
 };

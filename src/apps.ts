@@ -132,4 +132,4 @@ export const templatesDepencencies = {
     direct: ['next-i18next', 'express'],
     dev: ['nodemon', '@types/express', 'ts-node'],
   },
-};
+} as const;
