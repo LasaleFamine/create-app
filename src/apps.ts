@@ -48,16 +48,14 @@ export const getCommonApp = (appName: string) => ({
       'stylelint-config-standard',
       'ts-jest',
       'typescript',
-
-      // TODO: Remove when @lasalefamine/postcss-config is ready
-      'postcss-mixins@6',
+      'postcss-mixins',
       'postcss-easy-import',
       'postcss-normalize',
       'postcss-preset-env',
       'postcss-responsive-type',
       'postcss-inset',
       'postcss',
-      'cssnano-preset-advanced@4',
+      'cssnano-preset-advanced',
       'cssnano',
     ],
   },
