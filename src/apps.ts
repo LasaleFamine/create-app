@@ -22,7 +22,6 @@ export const getCommonApp = (appName: string) => ({
       '@commitlint/cli',
       '@testing-library/jest-dom',
       '@testing-library/react',
-      '@testing-library/react-hooks',
       '@types/jest',
       '@types/node',
       '@types/react',
