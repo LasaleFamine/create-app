@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.9](https://github.com/LasaleFamine/create-app/compare/v1.1.8...v1.1.9) (2022-11-15)
+
+
+### Bug Fixes
+
+* remove old deps from boilerplate ([#46](https://github.com/LasaleFamine/create-app/issues/46)) ([de43260](https://github.com/LasaleFamine/create-app/commit/de43260b44ee3c68cff1fc93e489099d1c9bf94a))
+* removed useless dep ([#45](https://github.com/LasaleFamine/create-app/issues/45)) ([c55893e](https://github.com/LasaleFamine/create-app/commit/c55893eb70bdee319e4f120a94b488fb799fe4de))
+
 ### [1.1.8](https://github.com/LasaleFamine/create-app/compare/v1.1.7...v1.1.8) (2022-03-26)
 
 ### [1.1.7](https://github.com/LasaleFamine/create-app/compare/v1.1.6...v1.1.7) (2022-03-26)
